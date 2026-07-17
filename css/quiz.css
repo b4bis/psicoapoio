@@ -1,0 +1,356 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#ffffff;
+    color:#333;
+
+    transition:.4s;
+
+}
+
+/* ===========================
+   MODO ESCURO
+=========================== */
+
+body.dark{
+
+    background:#0F0F0F;
+    color:white;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:70px;
+
+}
+
+.logo h2{
+
+    color:#8B5CF6;
+    font-size:28px;
+
+}
+
+body.dark header{
+
+    background:rgba(15,15,15,.95);
+
+}
+
+.logo h2{
+
+    color:#8B5CF6;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+body.dark nav a{
+
+    color:white;
+
+}
+
+nav a:hover{
+
+    color:#8B5CF6;
+
+}
+
+#tema{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#8B5CF6;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#tema:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+main{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:700px;
+
+    background:#F5F3FF;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+body.dark .container{
+
+    background:#1E1E1E;
+
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    color:#8B5CF6;
+
+    margin-bottom:10px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+body.dark .subtitulo{
+
+    color:#ddd;
+
+}
+
+h2{
+
+    margin:30px 0;
+
+    font-size:24px;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   BARRA
+=========================== */
+
+.barra{
+
+    width:100%;
+
+    height:10px;
+
+    background:#E9D5FF;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+#progresso{
+
+    width:0;
+
+    height:100%;
+
+    background:#8B5CF6;
+
+    transition:.4s;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8B5CF6;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(139,92,246,.3);
+
+}
+
+/* ===========================
+   OPÇÕES
+=========================== */
+
+.opcao{
+
+    background:white;
+
+    color:#333;
+
+    margin-bottom:15px;
+
+    border:2px solid transparent;
+
+}
+
+.opcao:hover{
+
+    background:#E9D5FF;
+
+    border-color:#8B5CF6;
+
+}
+
+body.dark .opcao{
+
+    background:#2A2A2A;
+
+    color:white;
+
+}
+
+body.dark .opcao:hover{
+
+    background:#3C2E63;
+
+}
+
+.selecionada{
+
+    background:#8B5CF6 !important;
+
+    color:white;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.container{
+
+    padding:25px;
+
+}
+
+h1{
+
+    font-size:30px;
+
+}
+
+h2{
+
+    font-size:20px;
+
+}
+
+}
